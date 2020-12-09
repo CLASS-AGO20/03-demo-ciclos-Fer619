@@ -41,6 +41,19 @@ export default class App {
         return suma;
 
     }
+
+    contarImparesWhile(inicio, fin){
+        let i= inicio;
+        let impares= 0;
+
+        while(i<= fin){
+            if(i%2 !==0){
+                impares = impares + 1;
+            }
+            i= i + 1;
+        } 
+        return impares;
+    }
 }
 
 let app = new App();
@@ -50,3 +63,5 @@ console.log(app.sumarParesFor());
 console.log(app.contarImparesFor(1, 13));
 
 console.log(app.sumarParesWhile());
+
+console.log(app.contarImparesWhile(1, 15));
